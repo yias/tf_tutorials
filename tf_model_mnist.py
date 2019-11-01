@@ -28,14 +28,15 @@ model=keras.Model(inputs=inputs, outputs=outputs)
 
 (x_train, y_train), (x_test, y_test) = keras.datasets.mnist.load_data()
 
-# preprocess 
-
-print(y_train[0])
+# preprocess the data (concatenate all the rows one after another), since they are numpy arrays
 
 
+
+"""
 for ii in range(20):
 	tmp_img=x_train[ii].reshape(28,28)
 	imgplot=plt.imshow(tmp_img)
 	plt.title("label: " + str (y_train[ii]))
 	plt.savefig("mnist_png/out_"+str(ii)+".png")
 	plt.show(block=True)
+"""
