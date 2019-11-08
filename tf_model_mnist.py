@@ -91,5 +91,5 @@ for ii in range(20):
 	imgplot=plt.imshow(tmp_img)
 	plt.title("label: " + str (y_train[ii]))
 	plt.savefig("mnist_png/out_"+str(ii)+".png")
-	plt.show(block=True)
+	plt.show(block=True)/
 """
